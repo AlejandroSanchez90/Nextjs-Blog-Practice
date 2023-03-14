@@ -1,5 +1,15 @@
+import Hero from '../components/home-page/hero';
+import FeaturedPosts from '../components/home-page/featured-posts';
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <Hero />
+      <FeaturedPosts />
+    </>
+  );
 }
+//Hero
+//Featured posts
 
 export default HomePage;
