@@ -1,19 +1,16 @@
 import React from 'react';
 import ContactForm from '../components/contact/contact-form';
+import Head from 'next/head';
 
 function ContactPage() {
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-    console.log(e);
-    fetch('/api/contact', {
-      method: 'POST',
-    });
-  };
-
   return (
-    <div>
-      <ContactForm onSubmit={onSubmitHandler} />
-    </div>
+    <>
+      <Head>
+        <title>Contact Me</title>
+        <meta name='description' content='send me a message' />
+      </Head>
+      <ContactForm />
+    </>
   );
 }
 
